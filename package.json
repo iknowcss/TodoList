@@ -1,20 +1,21 @@
 {
-  "name"         : "TodoList",
-  "description"  : "A simple todo-list. Demonstrate node, express, angular, less",
-  "author"       : "Cody Jenkins <cody.jenkins@iknowcss.com>",
-  "version"      : "0.0.1",
-  "private"      : false,
-
-  "engine" : "node >= 0.10.18",
+  "name"          : "TodoList",
+  "description"   : "A simple todo-list. Demonstrate node, express, angular, less",
+  "author"        : "Cody Jenkins <cody.jenkins@iknowcss.com>",
+  "version"       : "0.0.1",
+  "private"       : false,
+  "engine"        : "node >= 0.10.18",
   "dependencies" : {
     "express"         : "3.4.x",
     "jade"            : "0.35.x",
     "less-middleware" : "0.1.x"
   },
-  "devDependencies": {
+  "devDependencies" : {
+    "mocha"  : "1.13.x",
     "jshint" : "2.1.x"
   },
   "scripts" : {
+    "test"  : "",
     "start" : "node app.js"
   }
 }
