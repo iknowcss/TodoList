@@ -1,0 +1,35 @@
+a {
+  color: @link-color;
+  text-decoration: none;
+  outline: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+a.btn,
+button {
+  color: @text-color;
+  background-color: @base-color;
+  border-style: solid;
+  border-color: @shadow-color;
+  border-width: 0 1px 1px 0;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0.5em 1em;
+
+  &:hover {
+    background-color: lighten(@base-color, 5);
+  }
+
+  &:active {
+    border-width: 1px 0 0 1px;
+  }
+}
+
+a.btn {
+  text-decoration: none;
+  display: inline-block;
+  zoom: 1;
+}

@@ -1,0 +1,21 @@
+#tech-table {
+
+  .table-head,
+  .row {
+    div:first-child { text-align: right; }
+  }
+
+  .table-head {
+    font-weight: bold;
+    background-color: @base-color;
+  }
+
+  .row:nth-child(2n-1) {
+    background-color: @light-color;
+  }
+
+  .row:last-child {
+    border-bottom: 2px solid @base-color;
+  }
+
+}
