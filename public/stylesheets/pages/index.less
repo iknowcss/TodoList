@@ -1,21 +1,15 @@
-#tech-table {
+#index-page {
 
-  .table-head,
-  .row {
-    div:first-child { text-align: right; }
+  padding-top: @baseline;
+
+  #intro-section {
+    .rounded-corners(20px);
+    padding: @baseline 0;
+    background-color: lighten(@clr-pri-light, 20%);
   }
 
-  .table-head {
-    font-weight: bold;
-    background-color: @base-color;
-  }
-
-  .row:nth-child(2n-1) {
-    background-color: @light-color;
-  }
-
-  .row:last-child {
-    border-bottom: 2px solid @base-color;
+  #about-section {
+    padding-top: @baseline;
   }
 
 }

@@ -5,7 +5,7 @@
 exports.index = function (req, res) {
   res.render('index', {
     pageTitle: 'TodoList',
-    title: 'TodoList Experiment',
+    title: 'TodoList',
     techList: [
 
       {

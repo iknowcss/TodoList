@@ -2,25 +2,31 @@ extends layout
 
 block content
 
-  div.container_12
-    div.grid_12
-      h1= title
-      p
-        a.btn(href="todo") Click to start!
+  div#index-page
 
-  div.container_12#tech-table
-    div.grid_12
-      h2 About
-      p.
-        TodoList is a node.js application for creaiting and maintaining a daily 
-        todo-list. TodoList uses the following technologies:
+    div.container_12#intro-section
+      div.grid_12.center
+        h1= title
+        h3
+          | TodoList is a node.js application for creating and maintaining a 
+          | daily todo-list.
+        p
+          a.btn(href="#") Click to start!
 
-    div.grid_7.table-head
-      div.grid_2.alpha Technology
-      div.grid_4.omega Purpose
+    div.container_12#about-section
+      div.grid_6
+        h2 About
+        img.grid_2.alpha.rounded(src="images/cody.jpg")
+        p.grid_4.omega
+          | I am developing TodoList to experiment with the technologies listed
+          | to the right. If you would like to contact me, send me an e-mail at 
+          a(href="mailto:cody.jenkins@iknowcss.com")
+            | cody.jenkins@iknowcss.com
 
-    each tech in techList
-      div.grid_7.row
-        div.grid_2.alpha
-          a(href=tech.url)= tech.name
-        div.grid_4.omega= tech.description
+      div.grid_6
+        h3.grid_6 Powered by
+        each tech in techList
+          div.grid_6.row
+            div.grid_2.alpha
+              a(href=tech.url)= tech.name
+            div.grid_4.omega= tech.description

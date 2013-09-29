@@ -1,12 +1,46 @@
-@border-radius: 10px;
+// Color scheme
+@clr-pri           : #6fa655;
+@clr-pri-lowlight  : darken(@clr-pri, 10%);
+@clr-pri-dark      : darken(@clr-pri, 20%);
+@clr-pri-highlight : lighten(@clr-pri, 10%);
+@clr-pri-light     : lighten(@clr-pri, 20%);
 
-@base-color: #afccaa;
-@dark-color: darken(@base-color, 30%);
-@shadow-color: darken(@base-color, 50%);
-@light-color: lighten(@base-color, 15%);
+@clr-a             : #248d78;
+@clr-a-lowlight    : #2f5c53;
+@clr-a-dark        : #06493b;
+@clr-a-highlight   : #83ebd6;
+@clr-a-light       : #bdebe2;
 
-@text-color: black;
-@link-color: saturate(@shadow-color, 100%);
+@clr-b             : #dd7938;
+@clr-b-lowlight    : #90664a;
+@clr-b-dark        : #723209;
+@clr-b-highlight   : #f9b78b;
+@clr-b-light       : #f9dcc8;
+
+@clr-com           : #cd3452;
+@clr-com-lowlight  : #864552;
+@clr-com-dark      : #6a081b;
+@clr-com-highlight : #f68a9f;
+@clr-com-light     : #f6c6d0;
+
+// Element colors
+@link-text       : @clr-com;
+@btn-bg          : @clr-pri;
+@btn-highlight   : @clr-pri-highlight;
+@btn-text        : #fff;
+@btn-text-shadow : 1px 1px @clr-pri-dark;
+@btn-border      : 1px solid @clr-pri-lowlight;
+
+// Rounded
+@default-border-radius: 5px;
+.rounded-corners (@radius: @default-border-radius) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+// Baseline
+@baseline: 25px;
 
 // 960 Grid System
 @import "960/reset.less";

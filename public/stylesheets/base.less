@@ -1,5 +1,5 @@
 a {
-  color: @link-color;
+  color: @link-text;
   text-decoration: none;
   outline: 0;
 
@@ -8,28 +8,38 @@ a {
   }
 }
 
-a.btn,
-button {
-  color: @text-color;
-  background-color: @base-color;
-  border-style: solid;
-  border-color: @shadow-color;
-  border-width: 0 1px 1px 0;
-  font-size: 13px;
-  cursor: pointer;
-  padding: 0.5em 1em;
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.rounded {
+  .rounded-corners;
+}
+
+.btn {
+  &, &:hover {
+    .rounded-corners;
+    position: relative;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: @btn-border;
+    color: @btn-text;
+    background-color: @btn-bg;
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: @btn-text-shadow;
+    zoom: 1;
+  }
 
   &:hover {
-    background-color: lighten(@base-color, 5);
+    background-color: @btn-highlight;
   }
 
   &:active {
-    border-width: 1px 0 0 1px;
+    background-color: @clr-pri-light;
   }
-}
-
-a.btn {
-  text-decoration: none;
-  display: inline-block;
-  zoom: 1;
 }
