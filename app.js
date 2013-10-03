@@ -26,7 +26,8 @@ app.use(require('less-middleware')({
 app.use(express.static(publicPath));
 
 // Routes
-app.get('/', routes.index);
+app.get('/?', routes.index);
+app.get('/todo/?', routes.todo);
 
 // Development Settings
 if ('development' == app.get('env')) {
