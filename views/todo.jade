@@ -2,4 +2,31 @@ extends layout
 
 block content
 
-  span yes!
+  div#todo-page
+
+    div.container_12#intro-section
+      div.grid_12.center
+        h1= title
+        h3
+          | TodoList is a node.js application for creating and maintaining a 
+          | daily todo-list.
+        p
+          a.btn(href="todo/") Click to start!
+
+    div.container_12#about-section
+      div.grid_6
+        h2 About
+        img.grid_2.alpha.rounded(src="images/cody.jpg")
+        p.grid_4.omega
+          | I am developing TodoList to experiment with the technologies listed
+          | to the right. If you would like to contact me, send me an e-mail at 
+          a(href="mailto:cody.jenkins@iknowcss.com")
+            | cody.jenkins@iknowcss.com
+
+      div.grid_6
+        h2.grid_6 Powered by
+        each tech in techList
+          div.grid_6.row
+            div.grid_2.alpha
+              a(href=tech.url)= tech.name
+            div.grid_4.omega= tech.description
