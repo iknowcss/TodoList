@@ -1,0 +1,15 @@
+Drop 1
+- See each of the items on the list
+- Edit an item on the list
+- Add a new item to the list
+- Delete an item from the list
+- Mark/unmark an item as complete
+
+Drop 2
+- Show/hide completed items
+  + Show only uncompleted
+  + Show only completed
+  + Show both completed and uncompleted
+- See my lists
+- Select a list to view
+- 

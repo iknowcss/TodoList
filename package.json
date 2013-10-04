@@ -8,7 +8,8 @@
   "dependencies" : {
     "express"         : "3.4.x",
     "jade"            : "0.35.x",
-    "less-middleware" : "0.1.x"
+    "less-middleware" : "0.1.x",
+    "sqlite3"         : "2.1.x"
   },
   "devDependencies" : {
     "mocha"       : "1.13.x",

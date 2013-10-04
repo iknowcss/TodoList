@@ -1,13 +1,14 @@
-var express = require('express'),
-  http = require('http'),
-  path = require('path'),
+var express = require('express')
+  , http = require('http')
+  , path = require('path')
 
-  listenPort = process.env.PORT || 3000,
-  viewsPath = path.join(__dirname, 'views'),
-  publicPath = path.join(__dirname, 'public'),
+  , listenPort = process.env.PORT || 3000
+  , viewsPath = path.join(__dirname, 'views')
+  , publicPath = path.join(__dirname, 'public')
 
-  app = express(),
-  routes = require('./routes');
+  , app = express()
+  , routes = require('./routes')
+  , routes = require('./routes');
 
 // Setup
 app.set('port', listenPort);
@@ -26,8 +27,8 @@ app.use(require('less-middleware')({
 app.use(express.static(publicPath));
 
 // Routes
-app.get('/?', routes.index);
-app.get('/todo/?', routes.todo);
+app.get('/?', routes.home.index);
+app.get('/todo/?', routes.todo.index);
 
 // Development Settings
 if ('development' == app.get('env')) {
