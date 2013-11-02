@@ -1,9 +1,3 @@
-People
-- Kevin
-- Adam
-- Gary
-- Jarod
-
 Drop 1
 - See each of the items on the list
 - Edit an item on the list

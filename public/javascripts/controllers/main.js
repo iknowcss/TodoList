@@ -1,5 +1,0 @@
-TodoList.Main = function ($scope) {
-
-  
-
-};

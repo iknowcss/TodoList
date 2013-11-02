@@ -1,1 +1,1 @@
-var TodoList = {};
+var TodoList = angular.module('TodoList', []);
