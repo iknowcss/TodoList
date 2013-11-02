@@ -21,9 +21,9 @@ exports.index = function (req, res) {
         url: 'http://angularjs.org/',
         description: 'MVC Framework'
       }, {
-        name: 'Mocha',
-        url: 'http://http://visionmedia.github.io/mocha/',
-        description: 'Unit testing framework' 
+        name: 'LESS',
+        url: 'http://lesscss.org/',
+        description: 'Dynamic stylesheet language'
       }, {
         name: 'node-sqlite3',
         url: 'https://github.com/developmentseed/node-sqlite3',

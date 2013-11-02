@@ -4,6 +4,10 @@
   "author"        : "Cody Jenkins <cody.jenkins@iknowcss.com>",
   "version"       : "0.0.1",
   "private"       : false,
+  "repository" : {
+    "type" : "git",
+    "url"  : "https://github.com/iknowcss/TodoList.git"
+  },
   "engine"        : "node >= 0.10.18",
   "dependencies" : {
     "express"         : "3.4.x",
@@ -14,11 +18,13 @@
   "devDependencies" : {
     "mocha"       : "1.13.x",
     "jshint"      : "2.1.x",
-    "supervisor"  : "*"
+    "supervisor"  : "*",
+    "bower"       : "*"
   },
   "scripts" : {
-    "test"      : "",
-    "start"     : "node app.js",
-    "autostart" : "node ./node_modules/supervisor/lib/cli-wrapper.js app.js"
+    "test"       : "",
+    "start"      : "node app.js",
+    "autostart"  : "node ./node_modules/supervisor/lib/cli-wrapper.js app.js",
+    "install-ng" : "./node_modules/bower/bin/bower install angular#1.2.0-rc.2"
   }
 }

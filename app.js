@@ -21,9 +21,16 @@ app.use(express.methodOverride());
 app.use(express.cookieParser('your secret here'));
 app.use(express.session());
 app.use(app.router);
+
+// LESS/CSS
 app.use(require('less-middleware')({
   src: publicPath
 }));
+
+// Vendor JavaScript
+app.use('/javascripts/vendor/angular', express.static(path.join(__dirname, 'bower_components/angular')))
+
+// Static content
 app.use(express.static(publicPath));
 
 // Routes

@@ -13,6 +13,11 @@ git clone https://github.com/iknowcss/TodoList.git
 npm install
 ```
 
+#### Install AngularJS
+```
+npm run-script install-ng
+```
+
 #### Start the server
 ```
 npm start
