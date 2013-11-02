@@ -36,6 +36,7 @@ app.use(express.static(publicPath));
 // Routes
 app.get('/?', routes.home.index);
 app.get('/todo/?', routes.todo.index);
+app.get('/todo/list-items/?', routes.todo.listItems);
 
 // Development Settings
 if ('development' == app.get('env')) {

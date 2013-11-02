@@ -7,3 +7,6 @@ block content
     div.container_12
       div.grid_12.center
         div(ng:controller="ListCtrl")
+          ul
+            li(ng:repeat="listItem in listItems")
+              {{ listItem.description }}
