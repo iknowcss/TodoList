@@ -1,7 +1,8 @@
 // Color scheme
-@clr-pri           : #6fa655;
-@clr-pri-lowlight  : darken(@clr-pri, 10%);
-@clr-pri-dark      : darken(@clr-pri, 20%);
+@clr-pri           : lighten(#6fa655, 20%);
+@clr-pri-midlight  : darken(@clr-pri, 20%);
+@clr-pri-lowlight  : darken(@clr-pri, 30%);
+@clr-pri-dark      : darken(@clr-pri, 40%);
 @clr-pri-highlight : lighten(@clr-pri, 10%);
 @clr-pri-light     : lighten(@clr-pri, 20%);
 
@@ -25,22 +26,23 @@
 
 // Element colors
 @link-text       : @clr-com;
-@btn-bg          : @clr-pri;
-@btn-highlight   : @clr-pri-highlight;
+@btn-bg          : @clr-pri-midlight;
+@btn-highlight   : @clr-pri;
 @btn-text        : #fff;
 @btn-text-shadow : 1px 1px @clr-pri-dark;
 @btn-border      : 1px solid @clr-pri-lowlight;
 
+// Baseline
+@baseline: 12px;
+@gridline: 10px;
+
 // Rounded
-@default-border-radius: 5px;
+@default-border-radius: @gridline;
 .rounded-corners (@radius: @default-border-radius) {
   border-radius: @radius;
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
 }
-
-// Baseline
-@baseline: 25px;
 
 // 960 Grid System
 @import "960/reset.less";

@@ -5,8 +5,12 @@ block content
   div#todo-page(ng:app="TodoList")
 
     div.container_12
-      div.grid_12.center
+      div.grid_6.push_3.center
+        h1.todo-list-title My List
+
+    div.container_12
+      div.grid_6.push_3
         div(ng:controller="ListCtrl")
-          ul
+          ul.todo-list
             li(ng:repeat="listItem in listItems")
               {{ listItem.description }}

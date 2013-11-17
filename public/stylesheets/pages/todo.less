@@ -1,5 +1,26 @@
 #todo-page {
   
-  
+  padding-top: @baseline;
+
+  .todo-list-title {
+    .rounded-corners();
+    background-color: @clr-pri;
+    margin-bottom: @baseline;
+  }
+
+  .todo-list {
+    li {
+      margin: 0;
+      list-style: none;
+      padding: @baseline;
+      border-top: 1px solid @clr-pri-highlight;
+
+      &:first-child { border-top: none; }
+    }
+
+    li:nth-child(2n) {
+      // background-color: @clr-pri-light;
+    }
+  }
 
 }

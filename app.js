@@ -1,19 +1,20 @@
-var express = require('express')
-  , http = require('http')
-  , path = require('path')
+var express    = require('express')
+  , http       = require('http')
+  , path       = require('path')
 
-  , listenPort = process.env.PORT || 3000
-  , viewsPath = path.join(__dirname, 'views')
+  , viewsPath  = path.join(__dirname, 'views')
   , publicPath = path.join(__dirname, 'public')
 
-  , app = express()
-  , routes = require('./routes')
-  , routes = require('./routes');
+  , app        = express()
+  , listenPort = process.env.PORT || 3000
+  , routes     = require('./routes');
 
-// Setup
+// Server setup
 app.set('port', listenPort);
 app.set('views', viewsPath);
 app.set('view engine', 'jade');
+
+// Basics
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
